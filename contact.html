@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>સંપર્ક - Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-gu">કવિ</span>
+        <span class="logo-en">Kavi</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">હોમ</a></li>
+        <li><a href="about.html">સર્જક વિશે</a></li>
+        <li><a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a></li>
+        <li><a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a></li>
+        <li><a href="tunki-varta.html">ટૂંકી વાર્તા</a></li>
+        <li><a href="contact.html" class="active">સંપર્ક</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="background:linear-gradient(135deg,#0d2137,#1a4a6e,#1a6ea8);">
+    <h1>💌 સંપર્ક</h1>
+    <p>આપ સૌના અભિપ્રાય, સૂચન અને સ્નેહ-સંદેશ આવકાર્ય છે</p>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-flex">
+
+        <!-- LEFT: INFO -->
+        <div class="contact-info">
+          <span class="section-tag">અમારી સાથે</span>
+          <h2>વાત કરો આપણે</h2>
+          <p>
+            કવિ સાથે સીધો સંવાદ. આપ વાચક, સ્નેહી, કે સાથી-સ્રષ્ટા
+            — સૌ સ્વાગત. આ ઇ-બુક વિશે, કવિ વિશે, કે ગુજરાતી
+            સાહિત્ય વિશે — ગમે તે લખો.
+          </p>
+
+          <div class="contact-item">
+            <span>📧</span>
+            <div>
+              <strong style="font-family:'Noto Serif Gujarati',serif;">ઈ-મેઈલ</strong>
+              <p>yourname@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span>📱</span>
+            <div>
+              <strong style="font-family:'Noto Serif Gujarati',serif;">ફોન / WhatsApp</strong>
+              <p>+91 99999 99999</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span>📍</span>
+            <div>
+              <strong style="font-family:'Noto Serif Gujarati',serif;">સ્થળ</strong>
+              <p>ગુજરાત, ભારત</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span>🕐</span>
+            <div>
+              <strong style="font-family:'Noto Serif Gujarati',serif;">પ્રતિક્રિયા-સમય</strong>
+              <p>24 કલાકની અંદર</p>
+            </div>
+          </div>
+
+          <!-- SOCIAL LINKS -->
+          <div style="margin-top:28px;">
+            <h4 style="font-family:'Playfair Display',serif;margin-bottom:14px;color:#2a1a0e;">સોશ્યલ મીડિયા</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="#" style="background:#1877f2;color:white;padding:10px 18px;border-radius:10px;text-decoration:none;font-family:'Noto Serif Gujarati',serif;font-size:0.9rem;display:flex;align-items:center;gap:6px;">
+                📘 Facebook
+              </a>
+              <a href="#" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;padding:10px 18px;border-radius:10px;text-decoration:none;font-family:'Noto Serif Gujarati',serif;font-size:0.9rem;display:flex;align-items:center;gap:6px;">
+                📸 Instagram
+              </a>
+              <a href="#" style="background:#25d366;color:white;padding:10px 18px;border-radius:10px;text-decoration:none;font-family:'Noto Serif Gujarati',serif;font-size:0.9rem;display:flex;align-items:center;gap:6px;">
+                💬 WhatsApp
+              </a>
+              <a href="#" style="background:#ff0000;color:white;padding:10px 18px;border-radius:10px;text-decoration:none;font-family:'Noto Serif Gujarati',serif;font-size:0.9rem;display:flex;align-items:center;gap:6px;">
+                ▶️ YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="contact-form">
+          <h3>સંદેશ મોકલો</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label>આપનું નામ *</label>
+              <input type="text" placeholder="જેમ કે: રામભાઈ પટેલ" required/>
+            </div>
+            <div class="form-group">
+              <label>ઈ-મેઈલ *</label>
+              <input type="email" placeholder="yourname@gmail.com" required/>
+            </div>
+            <div class="form-group">
+              <label>ફોન નંબર</label>
+              <input type="tel" placeholder="+91 99999 99999"/>
+            </div>
+            <div class="form-group">
+              <label>વિષય *</label>
+              <input type="text" placeholder="જેમ કે: ઇ-બુક વિશે અભિપ્રાય" required/>
+            </div>
+            <div class="form-group">
+              <label>આપનો સંદેશ *</label>
+              <textarea placeholder="આપ ગમે તે ભાષામાં લખી શકો — ગુજરાતી, હિન્દી, English..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">💌 સંદેશ મોકલો</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- QUOTE BOX -->
+      <div style="margin-top:56px;background:linear-gradient(135deg,#fdf0e0,#fce4c0);border-radius:16px;padding:40px;text-align:center;border:1px solid rgba(212,160,23,0.3);">
+        <p style="font-family:'Playfair Display',serif;font-size:1.5rem;font-style:italic;color:#2a1a0e;margin-bottom:12px;">
+          "જ્ઞાાન-ભક્તિ, ભક્તિ-ભક્ત; ભક્ત-ઈશ્વર."
+        </p>
+        <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;">— ગુજરાતી કહેવત</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-gu" style="font-size:2rem;">કવિ</span>
+          <p>ગુજરાતી સાહિત્ય અને કવિતાની ઓનલાઈન દુનિયા</p>
+        </div>
+        <div class="footer-links">
+          <h4>પૃષ્ઠો</h4>
+          <a href="index.html">હોમ</a>
+          <a href="about.html">સર્જક વિશે</a>
+          <a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a>
+          <a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a>
+          <a href="tunki-varta.html">ટૂંકી વાર્તા</a>
+          <a href="contact.html">સંપર્ક</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>©Copyright 2024 | All Rights Reserved</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

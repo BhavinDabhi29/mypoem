@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ટૂંકી વાર્તા - Short Stories</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-gu">કવિ</span>
+        <span class="logo-en">Kavi</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">હોમ</a></li>
+        <li><a href="about.html">સર્જક વિશે</a></li>
+        <li><a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a></li>
+        <li><a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a></li>
+        <li><a href="tunki-varta.html" class="active">ટૂંકી વાર્તા</a></li>
+        <li><a href="contact.html">સંપર્ક</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="background:linear-gradient(135deg,#1a2a0d,#2e5a0f,#4a8a1a);">
+    <h1>📜 ટૂંકી વાર્તા</h1>
+    <p>જીવનની નાની-મોટી ઘટનાઓ પર આધારિત ૧૦ ભાવસભર વાર્તાઓ</p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="varta-list">
+
+        <div class="varta-item">
+          <div class="varta-num">૦૧</div>
+          <div class="varta-content">
+            <span class="varta-type">💚 ભાવસભર | ૫ min read</span>
+            <h3>માની ઓઢણી</h3>
+            <p>
+              ગામની પ્રત્યેક સ્ત્રીએ ઓઢણી ઓઢી હોય, પણ માની ઓઢણીમાં કંઈ જુદો ભાવ. ફૂલ ભર્યાં, રંગ ભર્યાં, ને ભર્યો ભર્યો સ્નેહ.
+              <br/><br/>
+              ગ્રીષ્મ ઋતુ. ઊઘ્ઘડ ઊઘ ઊઘ, ઝળ-ઝળ ઝળ. ઊઘ, ઝળ, ઊઘ. 
+              નાનો ઊઘ, ઝળ ઊઘ, ઝળ ઝળ. ઊઘ ઝળ. ઝળ ઊઘ. ઝળ-ઝળ ઊઘ-ઊઘ ઊઘ.
+              <br/><br/>
+              "ઓ માડી, ઓ..." — એ ગીત ઊઘ ઝળ ઊઘ ઊઘ. ઝળ ઊઘ ઝળ ઊઘ.
+            </p>
+            <div style="margin-top:16px;">
+              <button onclick="toggleStory(this)" style="background:none;border:1.5px solid #4a8a1a;color:#4a8a1a;padding:8px 20px;border-radius:20px;font-family:'Noto Serif Gujarati',serif;cursor:pointer;font-size:0.9rem;">
+                સંપૂર્ણ વાર્તા વાંચો ↓
+              </button>
+            </div>
+            <div class="full-story" style="display:none;margin-top:16px;border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;line-height:2;">
+                [અહીં આપ આપની સંપૂર્ણ વાર્તા ઉમેરો. આ ટેક્સ્ટ copy-paste કરી replace કરો.]<br/><br/>
+                આ placeholder text છે. તમારી વાર્તા અહીં ઉમેરો.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="varta-item">
+          <div class="varta-num">૦૨</div>
+          <div class="varta-content">
+            <span class="varta-type">💛 પ્રેરણાદાયી | ૭ min read</span>
+            <h3>ખેડૂતનો દીકરો</h3>
+            <p>
+              ખેતર ઊઘ-ઊઘ, ઝળ-ઝળ ઝળ. ઊઘ ઝળ ઊઘ ઊઘ ઝળ. ઊઘ ઝળ ઊઘ.
+              ઝળ-ઝળ ઊઘ-ઊઘ. ઝળ ઊઘ. ઝળ ઝળ ઊઘ ઊઘ.
+              <br/><br/>
+              શહેર ઊઘ ઝળ ઊઘ, ઝળ-ઝળ ઊઘ. ઝળ ઊઘ ઝળ ઊઘ ઝળ.
+              ઊઘ ઝળ ઝળ ઊઘ ઝળ. ઝળ-ઝળ ઊઘ-ઊઘ.
+            </p>
+            <div style="margin-top:16px;">
+              <button onclick="toggleStory(this)" style="background:none;border:1.5px solid #4a8a1a;color:#4a8a1a;padding:8px 20px;border-radius:20px;font-family:'Noto Serif Gujarati',serif;cursor:pointer;font-size:0.9rem;">
+                સંપૂર્ણ વાર્તા વાંચો ↓
+              </button>
+            </div>
+            <div class="full-story" style="display:none;margin-top:16px;border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;line-height:2;">
+                [આ ભાગ replace કરો — ખેડૂતના દીકરાની સંપૂર્ણ વાર્તા]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="varta-item">
+          <div class="varta-num">૦૩</div>
+          <div class="varta-content">
+            <span class="varta-type">❤️ પ્રેમ-વાર્તા | ૬ min read</span>
+            <h3>પ્રેમ-પત્ર</h3>
+            <p>
+              ઊઘ-ઊઘ ઝળ ઊઘ. ઝળ ઊઘ ઝળ-ઝળ ઊઘ. ઊઘ ઝળ ઊઘ ઝળ.
+              "ઊઘ ઝળ..." ઊઘ ઝળ ઊઘ. ઝળ ઊઘ ઝળ ઊઘ ઝળ.
+              <br/><br/>
+              ઊઘ ઝળ ઝળ ઊઘ. ઊઘ-ઊઘ ઝળ-ઝળ. ઊઘ ઝળ. ઝળ ઊઘ.
+            </p>
+            <div style="margin-top:16px;">
+              <button onclick="toggleStory(this)" style="background:none;border:1.5px solid #4a8a1a;color:#4a8a1a;padding:8px 20px;border-radius:20px;font-family:'Noto Serif Gujarati',serif;cursor:pointer;font-size:0.9rem;">
+                સંપૂર્ણ વાર્તા વાંચો ↓
+              </button>
+            </div>
+            <div class="full-story" style="display:none;margin-top:16px;border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;line-height:2;">
+                [આ ભાગ replace કરો — પ્રેમ-પત્રની સંપૂર્ણ વાર્તા]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="varta-item">
+          <div class="varta-num">૦૪</div>
+          <div class="varta-content">
+            <span class="varta-type">💜 આધ્યાત્મિક | ૮ min read</span>
+            <h3>સ્વામીજીની વાત</h3>
+            <p>
+              ઊઘ ઝળ ઊઘ ઊઘ. ઝળ ઊઘ ઝળ-ઝળ ઊઘ. ઊઘ ઝળ ઊઘ ઝળ.
+              ઊઘ-ઊઘ ઝળ-ઝળ ઊઘ. ઝળ ઊઘ ઝળ ઊઘ.
+              <br/><br/>
+              "ઊઘ-ઝળ..." ઊઘ ઝળ ઊઘ ઝળ ઊઘ. ઝળ-ઝળ ઊઘ-ઊઘ ઝળ.
+            </p>
+            <div style="margin-top:16px;">
+              <button onclick="toggleStory(this)" style="background:none;border:1.5px solid #4a8a1a;color:#4a8a1a;padding:8px 20px;border-radius:20px;font-family:'Noto Serif Gujarati',serif;cursor:pointer;font-size:0.9rem;">
+                સંપૂર્ણ વાર્તા વાંચો ↓
+              </button>
+            </div>
+            <div class="full-story" style="display:none;margin-top:16px;border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;line-height:2;">
+                [આ ભાગ replace કરો — સ્વામીજીની સંપૂર્ણ વાર્તા]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="varta-item">
+          <div class="varta-num">૦૫</div>
+          <div class="varta-content">
+            <span class="varta-type">🧡 ગ્રામ-જીવન | ૫ min read</span>
+            <h3>ગામડાનો ગઢ</h3>
+            <p>
+              ઊઘ-ઊઘ ઝળ-ઝળ ઊઘ ઝળ ઊઘ. ઝળ ઊઘ ઝળ ઊઘ ઝળ.
+              ઊઘ-ઝળ ઊઘ-ઊઘ. ઝળ ઊઘ ઝળ. ઊઘ ઝળ.
+            </p>
+            <div style="margin-top:16px;">
+              <button onclick="toggleStory(this)" style="background:none;border:1.5px solid #4a8a1a;color:#4a8a1a;padding:8px 20px;border-radius:20px;font-family:'Noto Serif Gujarati',serif;cursor:pointer;font-size:0.9rem;">
+                સંપૂર્ણ વાર્તા વાંચો ↓
+              </button>
+            </div>
+            <div class="full-story" style="display:none;margin-top:16px;border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-family:'Noto Serif Gujarati',serif;color:#6b5a4e;line-height:2;">
+                [આ ભાગ replace કરો — ગામડાના ગઢની સંપૂર્ણ વાર્તા]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADD MORE STORIES: Copy a varta-item block above and replace with your content -->
+
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center;margin-top:24px;padding:40px;background:linear-gradient(135deg,#1a2a0d,#2e5a0f);border-radius:16px;color:white;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:12px;">વધુ વાર્તાઓ ટૂંક સમયમાં...</h3>
+        <p style="font-family:'Noto Serif Gujarati',serif;opacity:0.85;margin-bottom:20px;">નોટિફિકેશન માટે અમારો સંપર્ક કરો</p>
+        <a href="contact.html" class="btn-hero" style="background:#d4a017;color:#1a2a0d;">સંપર્ક કરો →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-gu" style="font-size:2rem;">કવિ</span>
+          <p>ગુજરાતી સાહિત્ય અને કવિતાની ઓનલાઈન દુનિયા</p>
+        </div>
+        <div class="footer-links">
+          <h4>પૃષ્ઠો</h4>
+          <a href="index.html">હોમ</a>
+          <a href="about.html">સર્જક વિશે</a>
+          <a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a>
+          <a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a>
+          <a href="tunki-varta.html">ટૂંકી વાર્તા</a>
+          <a href="contact.html">સંપર્ક</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>©Copyright 2024 | All Rights Reserved</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleStory(btn) {
+      const story = btn.parentElement.nextElementSibling;
+      if (story.style.display === 'none') {
+        story.style.display = 'block';
+        btn.textContent = 'ઓછું કરો ↑';
+      } else {
+        story.style.display = 'none';
+        btn.textContent = 'સંપૂર્ણ વાર્તા વાંચો ↓';
+      }
+    }
+  </script>
+</body>
+</html>

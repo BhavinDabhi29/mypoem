@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>મારી કવિતા - My Poetry</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-gu">કવિ</span>
+        <span class="logo-en">Kavi</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">હોમ</a></li>
+        <li><a href="about.html">સર્જક વિશે</a></li>
+        <li><a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a></li>
+        <li><a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a></li>
+        <li><a href="tunki-varta.html">ટૂંકી વાર્તા</a></li>
+        <li><a href="contact.html">સંપર્ક</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <div class="slider" id="slider">
+      <div class="slide active" style="background: linear-gradient(135deg, #1a0533 0%, #4a1a6e 50%, #7b2d9e 100%);">
+        <div class="slide-content">
+          <p class="slide-tag">નવું પ્રકાશન</p>
+          <h1>શબ્દોની દુનિયામાં<br/><em>આપનું સ્વાગત છે</em></h1>
+          <p class="slide-sub">ભાવનાઓ, સ્વપ્નો અને જીવનની કળ એ જ કવિતા</p>
+          <a href="kavya-sangrah.html" class="btn-hero">કાવ્ય સંગ્રહ જુઓ →</a>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #0d2137 0%, #1a4a6e 50%, #2d7ea8 100%);">
+        <div class="slide-content">
+          <p class="slide-tag">શ્રેષ્ઠ કૃતિ</p>
+          <h1>પ્રેમ, વ્યથા અને<br/><em>જિંદગીની ગઝલ</em></h1>
+          <p class="slide-sub">હૃદયની ઊંડાઈથી નીકળેલા શબ્દો</p>
+          <a href="shresth-krutiyo.html" class="btn-hero">વધુ વાંચો →</a>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #1a2a0d 0%, #2e5a0f 50%, #4a8a1a 100%);">
+        <div class="slide-content">
+          <p class="slide-tag">ટૂંકી વાર્તા</p>
+          <h1>જીવનની નાની<br/><em>મોટી વાતો</em></h1>
+          <p class="slide-sub">સત્ય ઘટનાઓ પર આધારિત ભાવસભર વાર્તાઓ</p>
+          <a href="tunki-varta.html" class="btn-hero">વાર્તા વાંચો →</a>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #33100d 0%, #7a2218 50%, #b03020 100%);">
+        <div class="slide-content">
+          <p class="slide-tag">વિશેષ</p>
+          <h1>ગુજરાતી સાહિત્યની<br/><em>અમૂલ્ય ધરોહર</em></h1>
+          <p class="slide-sub">આપણી ભાષા, આપણી ઓળખ, આપણો ગર્વ</p>
+          <a href="about.html" class="btn-hero">સર્જક વિશે →</a>
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- FEATURED POEMS -->
+  <section class="section featured">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">વિશેષ</span>
+        <h2>આ અઠવાડિયાની કવિતાઓ</h2>
+        <p>મારા હૃદયમાંથી નીકળેલી, આપના સુધી પહોંચેલી</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card" onclick="location.href='kavya-sangrah.html'">
+          <div class="card-icon">🌹</div>
+          <div class="card-body">
+            <span class="card-cat">ગઝલ</span>
+            <h3>પ્રેમની પ્રીત</h3>
+            <p>તારી યાદ આવે છે જ્યારે, સ્વપ્નામાં ખોવાઈ જઉ છું,<br/>
+            શ્વાસ લઉ છું તારા નામનો, ઝૂઝ્યા ઝૂઝ્યા ઝૂઝ્યા...</p>
+            <span class="read-more">વધુ વાંચો →</span>
+          </div>
+        </div>
+        <div class="card featured-card" onclick="location.href='shresth-krutiyo.html'">
+          <div class="card-badge">⭐ શ્રેષ્ઠ</div>
+          <div class="card-icon">🌊</div>
+          <div class="card-body">
+            <span class="card-cat">કવિતા</span>
+            <h3>જળ અને જીવન</h3>
+            <p>જળ જેવું જીવન વહે, ક્યારેક શાંત ક્યારેક ઉછળે,<br/>
+            ઊંડાઈ છે ભીતર જ્યાં, ત્યાં સ્વર્ગ ઝળહળે...</p>
+            <span class="read-more">વધુ વાંચો →</span>
+          </div>
+        </div>
+        <div class="card" onclick="location.href='kavya-sangrah.html'">
+          <div class="card-icon">🌙</div>
+          <div class="card-body">
+            <span class="card-cat">ભજન</span>
+            <h3>ચાંદ અને ચાહત</h3>
+            <p>ચાંદ નીકળ્યો ચોખ્ખો, ચોકમાં ચમકે,<br/>
+            ચાહત ચૂપ ચૂપ, ચૂંટ ચૂંટ ઝળહળે...</p>
+            <span class="read-more">વધુ વાંચો →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="section about-teaser">
+    <div class="container about-flex">
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+          <span>✍️</span>
+          <p>સર્જક</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">સર્જક વિશે</span>
+        <h2>કોણ છે આ કવિ?</h2>
+        <p>ગુજરાતની ધરતી પર ઉગેલો એ ફૂલ, જેણે શબ્દોને પોતાની ભાષા બનાવ્યા. જ્યારથી કલમ હાથમાં લીધી, ત્યારથી જીવનની દરેક ઘટના કવિતા બની ગઈ.</p>
+        <p>વર્ષોની સાધના, હૃદયની સંવેદના અને ભાષા પ્રત્યેના અગાધ પ્રેમ સાથે, આ ઇ-બુક આપ સૌ માટે અર્પણ.</p>
+        <a href="about.html" class="btn-outline">વધુ જાણો →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section categories">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">વિભાગો</span>
+        <h2>શું વાંચવું છે?</h2>
+      </div>
+      <div class="cat-grid">
+        <a href="kavya-sangrah.html" class="cat-box" style="--c:#7b2d9e;">
+          <div class="cat-emoji">📖</div>
+          <h3>કાવ્ય સંગ્રહ</h3>
+          <p>૫૦+ કવિતાઓ</p>
+        </a>
+        <a href="shresth-krutiyo.html" class="cat-box" style="--c:#1a6ea8;">
+          <div class="cat-emoji">⭐</div>
+          <h3>શ્રેષ્ઠ કૃતિઓ</h3>
+          <p>પ્રિય ૧૫ રચનાઓ</p>
+        </a>
+        <a href="tunki-varta.html" class="cat-box" style="--c:#4a8a1a;">
+          <div class="cat-emoji">📜</div>
+          <h3>ટૂંકી વાર્તા</h3>
+          <p>૧૦ ભાવસભર વાર્તાઓ</p>
+        </a>
+        <a href="contact.html" class="cat-box" style="--c:#b03020;">
+          <div class="cat-emoji">💌</div>
+          <h3>સંપર્ક</h3>
+          <p>અભિપ્રાય આપો</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-gu" style="font-size:2rem;">કવિ</span>
+          <p>ગુજરાતી સાહિત્ય અને કવિતાની ઓનલાઈન દુનિયા</p>
+        </div>
+        <div class="footer-links">
+          <h4>પૃષ્ઠો</h4>
+          <a href="index.html">હોમ</a>
+          <a href="about.html">સર્જક વિશે</a>
+          <a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a>
+          <a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a>
+          <a href="tunki-varta.html">ટૂંકી વાર્તા</a>
+          <a href="contact.html">સંપર્ક</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>©Copyright 2024 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

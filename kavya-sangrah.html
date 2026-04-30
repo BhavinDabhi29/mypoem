@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>કાવ્ય સંગ્રહ - Poetry Collection</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-gu">કવિ</span>
+        <span class="logo-en">Kavi</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">હોમ</a></li>
+        <li><a href="about.html">સર્જક વિશે</a></li>
+        <li><a href="kavya-sangrah.html" class="active">કાવ્ય સંગ્રહ</a></li>
+        <li><a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a></li>
+        <li><a href="tunki-varta.html">ટૂંકી વાર્તા</a></li>
+        <li><a href="contact.html">સંપર્ક</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="background:linear-gradient(135deg,#0d2137,#1a4a6e,#2d7ea8);">
+    <h1>કાવ્ય સંગ્રહ</h1>
+    <p>હૃદયના ભાવ, શબ્દોની ભાષામાં — ૫૦+ કવિતાઓ</p>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div style="background:white;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:sticky;top:64px;z-index:100;">
+    <div class="container" style="display:flex;gap:8px;padding:12px 24px;overflow-x:auto;">
+      <button class="filter-btn active" onclick="filterPoems('all',this)">બધી</button>
+      <button class="filter-btn" onclick="filterPoems('ghazal',this)">ગઝલ</button>
+      <button class="filter-btn" onclick="filterPoems('kavita',this)">કવિતા</button>
+      <button class="filter-btn" onclick="filterPoems('bhajan',this)">ભજન</button>
+      <button class="filter-btn" onclick="filterPoems('muktak',this)">મુક્તક</button>
+    </div>
+  </div>
+
+  <style>
+    .filter-btn {
+      background:none;border:1.5px solid #e0d4f5;padding:7px 18px;border-radius:20px;
+      font-family:'Noto Serif Gujarati',serif;font-size:0.9rem;cursor:pointer;
+      color:#6b5a4e;transition:all 0.2s;white-space:nowrap;
+    }
+    .filter-btn.active,.filter-btn:hover {
+      background:#7b2d9e;color:white;border-color:#7b2d9e;
+    }
+    .poem-card[data-cat] { display:block; }
+    .poem-card.hidden { display:none; }
+  </style>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="poems-grid" id="poemsGrid">
+
+        <!-- POEM 1 -->
+        <div class="poem-card" data-cat="ghazal">
+          <div class="poem-card-top">
+            <div class="poem-num">૧</div>
+            <div class="poem-meta"><span>ગઝલ</span><h3>પ્રેમની પ્રીત</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              તારી યાદ આવે છે જ્યારે, સ્વપ્નામાં ખોવાઈ જઉ છું,<br/>
+              શ્વાસ લઉ છું તારા નામનો, ઝૂઝ્યા ઝૂઝ્યા ઝૂઝ્યા.<br/><br/>
+              ફૂલ ખીલે ઉગમણે, ચાંદ ઢળે આથમણે,<br/>
+              તારો ઈન્તઝાર કરૂ, દ્વાર ઉઘાડ્યા ઝૂઝ્યા.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૨ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- POEM 2 -->
+        <div class="poem-card" data-cat="kavita">
+          <div class="poem-card-top">
+            <div class="poem-num">૨</div>
+            <div class="poem-meta"><span>કવિતા</span><h3>જળ અને જીવન</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              જળ જેવું જીવન વહે, ક્યારેક શાંત ક્યારેક ઉછળે,<br/>
+              ઊંડાઈ છે ભીતર જ્યાં, ત્યાં સ્વર્ગ ઝળહળે.<br/><br/>
+              નદી ક્યારેય ન અટકે, ડુંગર ઓળંગી જાય,<br/>
+              એ જ ઉત્સાહ આ જીવને, ઉઘડ્યો નવો ઉગ્યો ઉષ:.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૨ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- POEM 3 -->
+        <div class="poem-card" data-cat="bhajan">
+          <div class="poem-card-top">
+            <div class="poem-num">૩</div>
+            <div class="poem-meta"><span>ભજન</span><h3>ઈશ્વર-ભક્તિ</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              હે ઈશ્વર, તારી મૂર્તિ મારા મનમાં,<br/>
+              ભક્તિ-ઝળહળ ભર્યો સ્નેહ ક્ષણ ક્ષણ.<br/><br/>
+              ઘંટ વાગે, દીપ ઝળહળ, ધૂપ મઘ-મઘ,<br/>
+              હૃદયમાં ઉઘડ્યો, ઈશ્વર-બાગ-બાગ.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૩ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- POEM 4 -->
+        <div class="poem-card" data-cat="muktak">
+          <div class="poem-card-top">
+            <div class="poem-num">૪</div>
+            <div class="poem-meta"><span>મુક્તક</span><h3>ઝૂઝ્યું મન</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              દ્વઃખ ખૂટ્યું ન, સ્નેહ ન ઓછો,<br/>
+              ઝૂઝ્યો ઝૂઝ્યો ઝૂઝ્યો, મારો ઝૂઝ્યો.<br/><br/>
+              સ્વ-ઉઘ્ઘડ ઉઘ્ઘડ ઉઘ્ઘડ, ઉઘ્ઘડ,<br/>
+              ઝૂઝ્યો ઝૂઝ્યો ઝૂઝ્યો, નિ:સ્નેહ.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૧ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- POEM 5 -->
+        <div class="poem-card" data-cat="kavita">
+          <div class="poem-card-top">
+            <div class="poem-num">૫</div>
+            <div class="poem-meta"><span>કવિતા</span><h3>માટી અને માણસ</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              માટીનો માણસ, માટીમાં ભળ્યો,<br/>
+              ઉઘ્ઘડ ઉઘ્ઘડ, ઉઘ્ઘડ સ્નેહ.<br/><br/>
+              ખેતરમાં ઉઘ્ઘડ, ઝળ-ઝળ ઝળ,<br/>
+              ઝૂઝ્યો ઉઘ્ઘડ, ઝૂઝ્યો ઝળ.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૨ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- POEM 6 -->
+        <div class="poem-card" data-cat="ghazal">
+          <div class="poem-card-top">
+            <div class="poem-num">૬</div>
+            <div class="poem-meta"><span>ગઝલ</span><h3>વ્યથાની વાત</h3></div>
+          </div>
+          <div class="poem-body">
+            <p>
+              ઝૂઝ્યો ઝળ ઝળ ઝૂઝ્યો, ઉઘ્ઘડ ઉઘ્ઘડ,<br/>
+              ઝૂઝ્યો ઉઘ્ઘડ ઉઘ્ઘડ, ઝૂઝ્યો ઝળ.<br/><br/>
+              સ્ નઘ ઉઘ, ઝૂઝ્યો ઝળ ઝળ ઝૂઝ્,<br/>
+              ઝૂઝ્યો ઝળ ઝૂઝ, ઉઘ ઝળ ઝૂઝ.
+            </p>
+          </div>
+          <div class="poem-footer">
+            <span>📖 ૩ min read</span>
+            <button class="poem-like">🤍 પ્રિય</button>
+          </div>
+        </div>
+
+        <!-- ADD MORE POEMS HERE — just copy a poem-card block above -->
+        <!-- Simply replace the content with your own poetry! -->
+
+      </div>
+
+      <!-- LOAD MORE -->
+      <div style="text-align:center;margin-top:16px;">
+        <button class="btn-outline" style="cursor:pointer;" onclick="this.textContent='✅ બધી કવિતા લોડ થઈ!'">
+          વધુ કવિતા જુઓ ↓
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-gu" style="font-size:2rem;">કવિ</span>
+          <p>ગુજરાતી સાહિત્ય અને કવિતાની ઓનલાઈન દુનિયા</p>
+        </div>
+        <div class="footer-links">
+          <h4>પૃષ્ઠો</h4>
+          <a href="index.html">હોમ</a>
+          <a href="about.html">સર્જક વિશે</a>
+          <a href="kavya-sangrah.html">કાવ્ય સંગ્રહ</a>
+          <a href="shresth-krutiyo.html">શ્રેષ્ઠ કૃતિઓ</a>
+          <a href="tunki-varta.html">ટૂંકી વાર્તા</a>
+          <a href="contact.html">સંપર્ક</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>©Copyright 2024 | All Rights Reserved</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function filterPoems(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.poem-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) card.classList.remove('hidden');
+        else card.classList.add('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
